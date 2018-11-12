@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background: url("../images/vacas.png") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Roboto';
+    height: 100%;
+    width: 100%;
+}
+
+#page-content-wrapper{
+    position: relative;
+    padding: 30px;
+}
+
+.grey_box{
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 20px;
+    background: #fcfdff; /*f8f9fb*/
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #3c3c3c; /*#404040;*/
+}
+
+.round-button{
+    border-radius: 25px;
+    min-width: 150px
+}
+
+.round-button-small{
+    border-radius: 25px;
+    width: 100px
+}
+
+.first-row{
+    margin-bottom: 0px !important;
+}
+
+.small-modal {
+    border-radius: 20px !important;
+    max-width: 550px !important;
+}
+
+.modal{
+    border-radius: 10px !important;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.navbar li {
+    height: 100%;
+    padding-top: 10px;
+}
+
+.navbar li.active {
+    background-color: #498d3f;
+}
+
+.navbar li.active a.mobile_link {
+    color: white;
+}
+
+.navbar li.active a.mobile_link i{
+    color: white;
+}
+
+.navbar li:hover{
+    background-color: #498d3f;
+}
+
+.navbar a{
+    height: 100%;
+    font-size: medium;
+}
+
+.nav-wrapper{
+    background-color: #203e1b;
+}
+
+.mobile_link{
+    height: 50px !important;
+    padding-top: 0px !important;
+}
+
+.page_title{
+    color: #0e1834;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.page_title:hover{
+    color: black;
+}
+
+.btn-secondary{
+    background-color: #319dff;
+}
+
+.btn-secondary:hover{
+    background-color: #274291;
+}
+
+.btn-primary{
+    background-color: #274291;
+}
+
+.btn-primary:hover{
+    background-color: #319dff;
+}
+.btn-confirm{
+    background-color: #3d9132;
+}
+
+.btn-confirm:hover{
+    background-color: #4eba40;
+}
+.btn-cancel{
+    background-color: #ce0a00;
+}
+
+.btn-cancel:hover{
+    background-color: #e90b00;
+}
+.btn-terciary{
+    background-color: #ce0a00;
+}
+
+.btn-terciary:hover{
+    background-color: #e90b00;
+}
+
+.btn-edit{
+    background-color: #203e1b;
+}
+
+.btn-edit:hover{
+    background-color: #498d3f;
+}
+
+
+.modal.bottom-sheet{
+    top:auto;
+    bottom:-50%;
+    margin:0;
+    width:100%;
+    max-height:45%;
+    border-radius:0;
+    will-change:bottom, opacity;
+}
+
+.loginSpinner{
+    margin: 0 auto;
+    text-align:center;
+    font-size:24px;
+    max-width: 50px;
+    max-height: 50px
+}
+
+
+.progress {
+    background-color: black;
+    margin: 0px !important;
+}
+
+.progress .indeterminate{
+    background-color: #2fe200;
+}
+
+.signaturHeader_field{
+    padding: 10px;
+}
+
+.signaturHeader_field:hover{
+    transform: scale(1.05);
+    padding: 10px;
+}
+
+#validationTable{
+  max-width: 100%;
+}
+
+td.long_word{
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+.card-subtitle{
+    line-height: 32px;
+    display:block;
+    margin-bottom:8px;
+    font-size: 18px;
+    font-weight: 300;
+}
