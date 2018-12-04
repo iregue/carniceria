@@ -85,15 +85,16 @@
                     <tbody>
                     <g:each in="${productList}" var="product">
                         <tr>
-                            <td class="long_word"><img class="responsive-img" src="${product.urlImagen}" style="max-height: 100px; max-width: 100px"></td>
-                            <td class="long_word">${product.nombre}</td>
-                            <td class="long_word">${product.barCode}</td>
-                            <td>
+                            <td class="long_word"><img class="responsive-img" src="${product.image}" style="max-height: 100px; max-width: 100px"></td>
+                            <td class="long_word">${product.name}</td>
+                            <td class="long_word">${product.description_breve}</td>
+                            <td></td>
+                            %{--<td>
                                 <a id="productLink@@${product.activoId}" href="#modal1" class="edit-product modal-trigger btn btn-lg btn-block btn-edit">Edit</a>
                             </td>
                             <td>
                                 <a id="productLink@@${product.activoId}" href="#modal2" class="delete-product modal-trigger btn btn-lg btn-block btn-terciary">Delete</a>
-                            </td>
+                            </td>--}%
 
                         </tr>
                     </g:each>
