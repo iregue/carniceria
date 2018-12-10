@@ -78,18 +78,18 @@
 
             var urlPage = window.location.href;
 
-            if (urlPage.indexOf("/merchant/productList") >= 0) {
-                $("#productListLink").addClass("active");
-                $("#mobileproductListLink").addClass("active");
+            if (urlPage.indexOf("/shops/index") >= 0) {
+                $("#shopListLink").addClass("active");
+                $("#mobileShopListLink").addClass("active");
             }
 
-            else if (urlPage.indexOf("/merchant/information") >= 0) {
-                $("#infoLink").addClass("active");
-                $("#mobileinfoLink").addClass("active");
+            else if (urlPage.indexOf("login/auth") >= 0) {
+                $("#loginLink").addClass("active");
+                $("#mobiileloginLink").addClass("active");
             }
-            else if (urlPage.indexOf("/merchant/index") >= 0) {
-                $("#addProductLink").addClass("active");
-                $("#mobileaddProductLink").addClass("active");
+            else if (urlPage.indexOf("/carniceria/") >= 0) {
+                $("#productListLink").addClass("active");
+                $("#mobileproductListLink").addClass("active");
             }
 
 
@@ -113,19 +113,19 @@
 			</a>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li id="addProductLink">
+				<li id="productListLink">
 					<a onclick="showMainLoader()" href="${createLink(action: 'index', controller: 'productos')}">
 						<i class="material-icons left">add</i>
 						Lista de Productos
 					</a>
 				</li>
-				<li id="productListLink">
+				<li id="shopListLink">
 					<a onclick="showMainLoader()" href="${createLink(action: 'index', controller: 'shops')}">
 						<i class="material-icons left">list</i>
 						Tiendas
 					</a>
 				</li>
-				<li>
+				<li id="loginLink">
 					<a onclick="showMainLoader()" href="${createLink(action: 'auth', controller: 'login')}">
 						<i class="material-icons left">exit_to_app</i>
 						Iniciar Sesion
@@ -134,9 +134,9 @@
 			</ul>
 
 			<ul class="sidenav" id="mobile-demo">
-				<li id="mobileaddProductLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'index', controller: 'merchant')}"><i class="material-icons left">add</i> Lista Productos</a></li>
-				<li id="mobileproductListLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'productList', controller: 'merchant')}"><i class="material-icons left">list</i> Tiendas</a></li>
-				<li class="mobile_link"><a class="mobile_link" href="${createLink(action: 'logout', controller: 'login')}"><i class="material-icons left">exit_to_app</i> Iniciar sesión Out</a></li>
+				<li id="mobileproductListLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'index', controller: 'productos')}"><i class="material-icons left">add</i> Lista Productos</a></li>
+				<li id="mobileShopListLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'index', controller: 'shops')}"><i class="material-icons left">list</i> Tiendas</a></li>
+				<li id="mobiileloginLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'auth', controller: 'login')}"><i class="material-icons left">exit_to_app</i> Iniciar sesión Out</a></li>
 			</ul>
 		</div>
 

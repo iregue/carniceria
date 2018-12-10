@@ -45,19 +45,6 @@
 
 <body>
 
-<g:form id="editProductForm" url="[action: 'editProduct', controller: 'merchant']">
-    <input type="hidden" id="nameEdit" name="nameEdit" value="${dni}">
-    <input type="hidden" id="barCodeEdit" name="barCodeEdit" value="${email}">
-    <input type="hidden" id="urlImageEdit" name="urlImageEdit" value="${certType}">
-    <input type="hidden" id="descriptionEdit" name="descriptionEdit" value="">
-    <input type="hidden" id="idEdit" name="idEdit" value="">
-</g:form>
-
-<g:form id="deleteProductForm" url="[action: 'deleteProduct', controller: 'merchant']">
-    <input type="hidden" id="idDelete" name="idDelete" value="">
-</g:form>
-
-
 <div class="grey_box">
     <div class="row first-row">
 
@@ -76,8 +63,8 @@
                     <tr>
                         <th>Imagen</th>
                         <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Valoración</th>
+                        <th>Precio</th>
+                        <th></th>
                         <th></th>
                     </tr>
                     </thead>
@@ -87,8 +74,13 @@
                         <tr>
                             <td class="long_word"><img class="responsive-img" src="${product.image}" style="max-height: 100px; max-width: 100px"></td>
                             <td class="long_word">${product.name}</td>
-                            <td class="long_word">${product.description_breve}</td>
-                            <td></td>
+                            <td class="long_word">${product.price}</td>
+                            <td>
+                                <a class="waves-effect waves-light btn">Descripción</a>
+                            </td>
+                            <td>
+                                <a class="waves-effect waves-light btn"><i class="material-icons left">shopping_cart</i>Comprar</a>
+                            </td>
                             %{--<td>
                                 <a id="productLink@@${product.activoId}" href="#modal1" class="edit-product modal-trigger btn btn-lg btn-block btn-edit">Edit</a>
                             </td>
