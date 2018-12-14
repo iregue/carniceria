@@ -211,3 +211,9 @@ td.long_word{
     font-size: 18px;
     font-weight: 300;
 }
+
+.filterSelect{
+    font-size: large !important;
+    color: #0e1834 !important;
+
+}

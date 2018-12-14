@@ -117,7 +117,7 @@
 
 <div id="page-content-wrapper">
 
-    <div class="grey_box" id="content" style="padding-top: 20px">
+    <div class="grey_box" id="content" style="padding-top: 20px; margin-left: 20%; margin-right: 20%">
 
         <g:if test="${msg}">
             <div class="alert alert-danger alert-dismissible" align="center" style="background-color: #ff3737" role="alert" id="loginAlert">
