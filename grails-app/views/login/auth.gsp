@@ -129,22 +129,21 @@
         <div style="margin-top: 20px">
             <form class="form-signin" role="form" method='POST'>
 
-                <h4 class="form-signin-heading"><i class="material-icons">lock</i>
-                </span>Login</h4>
+                <h4 class="form-signin-heading"><i class="material-icons">lock</i>Iniciar sesión</h4>
 
                 <div class="row">
                     <div class="input-field col s12" style="margin-bottom: 0">
                         <input id="j_username" type="text" class="validate">
-                        <label for="j_username">Username</label>
+                        <label for="j_username">Nombre de usuario</label>
                     </div>
 
                     <div class="input-field col s12">
                         <input id="j_password" type="password" class="validate">
-                        <label for="j_password">Password</label>
+                        <label for="j_password">Contraseña</label>
                     </div>
                 </div>
 
-                <a id="loginSubmit" href="#" class="btn btn-lg btn-primary btn-block"><span style="display: block" id="signIn">Sign in</span><i id="spinner" class="fa fa-refresh fa-spin" style="font-size:24px; display: none"></i></a>
+                <a id="loginSubmit" href="#" class="btn btn-lg btn-primary btn-block"><span style="display: block" id="signIn">Acceder</span><i id="spinner" class="fa fa-refresh fa-spin" style="font-size:24px; display: none"></i></a>
             </form>
         </div>
 
