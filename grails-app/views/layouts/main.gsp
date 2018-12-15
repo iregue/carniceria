@@ -136,7 +136,7 @@
 			<ul class="sidenav" id="mobile-demo">
 				<li id="mobileproductListLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'index', controller: 'productos')}"><i class="material-icons left">add</i> Lista Productos</a></li>
 				<li id="mobileShopListLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'index', controller: 'shops')}"><i class="material-icons left">list</i> Tiendas</a></li>
-				<li id="mobiileloginLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'auth', controller: 'login')}"><i class="material-icons left">exit_to_app</i> Iniciar sesión Out</a></li>
+				<li id="mobiileloginLink" class="mobile_link"><a class="mobile_link" href="${createLink(action: 'auth', controller: 'login')}"><i class="material-icons left">exit_to_app</i> Iniciar sesión</a></li>
 			</ul>
 		</div>
 
